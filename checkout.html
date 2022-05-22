@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <title>Document</title>
+</head>
+<body>
+ <header>
+  <h1>Checkout</h1>
+ </header>
+ <main class="container">
+  <div class="left">
+   <div class="top">
+    <h2 class="lt-element">Contact information</h2>
+    <label class="lt-element" for="email">Email</label>
+    <input class="lt-element" type="email" placeholder="Enter your mail..." id="email">
+    <label class="lt-element" for="phone">Phone</label>
+    <input class="lt-element" type="text" placeholder="Enter your phone..." id="phone">
+   </div>
+   <div class="middle">
+    <h2>Shipping address</h2>
+    <label for="fname">Fullname</label>
+    <input type="text" id="fname" placeholder="Enter your fullname...">
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Enter your address">
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="Enter your city...">
+   </div>
+   <div class="bottom">
+    <div class="count">
+     <label for="country">Country</label>
+     <select name="ülke" id="country">
+      <option value="ülke">Turkey</option>
+      <option value="ülke">France</option>
+      <option value="ülke">England</option>
+     </select>
+    </div>
+    <div class="pcount">
+     <label for="pcode">Postal</label>
+     <input type="text" id="pcode">
+    </div>
+    <div class="chdivi">
+     <input type="checkbox" name="c-box" id="check">
+     <label for="check">See this information next time</label>
+    </div>
+    <div class="sbtn">
+     <input type="submit" value="Continue">
+    </div>
+   </div>
+  </div>
+  <div class="right">
+   <div class="rt">
+    <img src="./img/photo1.png" alt="">
+    <div class="rr">
+     <span>Vintage Backpack</span>
+     <span>$54.99 <del>94.99</del></span>
+    </div>
+   </div>
+   <div class="rb">
+    <img src="./img/photo2.png" alt="">
+    <div class="bb">
+     <span>Vintage Backpack</span>
+     <span>$74.99 <del>124.99</del></span>
+    </div>
+   </div>
+   <div class="br">
+    <hr>
+    <p>Shipping <span>19$</span></p>
+    <hr>
+    <p>Total <span>149.98$</span></p>
+   </div>
+  </div>
+ </main>
+</body>
+</html>

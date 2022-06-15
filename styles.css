@@ -3,6 +3,7 @@
  margin: 0px;
  padding: 0px;
  box-sizing: border-box;
+ color: white;
 }
 img{
  width: 100px;
@@ -75,37 +76,102 @@ label.lt-element,input.lt-element{
 .sbtn input:hover{
  cursor: pointer;
 }
-.right{
- width: 35%;
+.product-panel{
+ width: 45%;
  flex-direction: column;
  display: flex;
  flex-wrap: wrap;
- background-color: rgba(0, 0, 0, 0.205);
- height: 620px;
+ background-color: rgba(150, 141, 141, 0.514);
+ height: 750px;
  border-radius: 10px;
 }
-.right .rt{
+
+.product-panel .product{
  display: flex;
+ margin: 10px 0 0 10px;
 }
-.right .rt .rr{
- display: flex;
- flex-direction: column;
- margin: 10px;
+.product-panel .product h2{
+ font-size: 19px;
 }
-.right .rt img, .right .rb img{
- width: 220px;
- margin: 12px 0px 0px 12px;
+.product-panel .product img{
+ width: 160px;
+ /* margin: 12px; */
  border-radius: 15px;
 }
-.right .rb{
- display: flex;
- margin-bottom: 50px;
+.product-panel .product-info{
+ /* background-color: #a14fed; */
+ width: 100%;
+ margin: 0 10px 0 10px;
+ padding-left: 10px;
 }
-.right .rb .bb{
- display: flex;
- flex-direction: column;
- margin: 10px;
+.product-panel .product-info h2,p{
+ margin-bottom: 3px;
 }
-.br{
- margin: 10px;
+.quantity-controller {
+ /* font-size: 14px; */
+ line-height: 1.75;
+ border-radius: 50px;
+ border: 3px solid rgb(136, 136, 136);
+ display: flex;
+ justify-content: space-around;
+ width: 80%;
+ margin-top: 10px;
+}
+.minus,
+.plus {
+ height: 20px;
+ width: 20px;
+ margin: 6px;
+ background-color: #ce0f0f;
+ border-radius: 5px;
+ padding: 0px 4px 10px 4px;
+ text-align: center;
+ font-weight: bold;
+ vertical-align: middle;
+ font-size: 15px;
+}
+.remove-product {
+ border: 0;
+ padding: 4px 8px;
+ margin: 5px;
+ background-color: #c66;
+ color: #fff;
+ font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+ font-size: 12px;
+ border-radius: 3px;
+ text-align: center;
+}
+.buy-detail {
+ margin: 10px 0 0 10px;
+}
+.remove-product:hover {
+ background-color: #a44;
+}
+.product-price strong::before {
+ content: "$";
+}
+.line-through::before {
+ content: "$";
+}
+.buy-detail p:nth-child(2):before {
+ content: "$";
+}
+.product-line-price {
+ float: left;
+ clear: left;
+ width: auto;
+ margin-top: 10px;
+}
+.product-line-price:before {
+ content: "Product Total: $";
+}
+.buy-detail{
+ display: flex;
+}
+.buy-detail p{
+ display: inline;
+ width: 50%;
+}
+.buy-detail p:nth-child(2) {
+ text-align: right;
 }

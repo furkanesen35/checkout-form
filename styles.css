@@ -130,6 +130,10 @@ label.lt-element,input.lt-element{
  vertical-align: middle;
  font-size: 15px;
 }
+.minus:hover,
+.plus:hover{
+ cursor: pointer;
+}
 .remove-product {
  border: 0;
  padding: 4px 8px;
@@ -146,6 +150,7 @@ label.lt-element,input.lt-element{
 }
 .remove-product:hover {
  background-color: #a44;
+ cursor: pointer;
 }
 .product-price strong::before {
  content: "$";

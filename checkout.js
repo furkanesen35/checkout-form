@@ -13,10 +13,11 @@ productsDiv.addEventListener("click", (event)=> {
  if(event.target.className == "minus"){
   if(event.target.nextElementSibling.innerText > 1){  
    event.target.nextElementSibling.innerText--;
-  } 
+  }
   else { 
-   if(confirm("Product will be deleted"))
-
+   if(confirm("Product will be deleted")){
+    event.target.parentElement.parentElement.parentElement.remove();
+   }
   }
   // console.log("minus clicked");
  }
@@ -35,3 +36,7 @@ productsDiv.addEventListener("click", (event)=> {
   // console.log("others clicked"); 
  }
 })
+
+const calculateProductAndCartTotal = () => {
+ calculateCartTotal();
+}
